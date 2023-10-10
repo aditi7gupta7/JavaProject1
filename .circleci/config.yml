@@ -1,5 +1,10 @@
+version: 2.1
+
 orbs:
   java-build: aditi7gupta7/circleci-config-common@1.0.0
 
 jobs:
-  - java-build/build
+  build:
+    executer: java-build/default
+    steps: 
+      - java-build/build
